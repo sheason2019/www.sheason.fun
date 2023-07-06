@@ -1,0 +1,20 @@
+.project_card {
+  transition-duration: 400ms;
+}
+.project_card:hover {
+  flex: 3;
+}
+
+.project_card:hover .hover_content {
+  flex: 1;
+  opacity: 1;
+}
+.hover_content {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition-duration: 400ms;
+}
+.static_content {
+  min-width: 360px;
+}
