@@ -27,6 +27,8 @@ jobs:
           username: ${{ secrets.HOST_USERNAME }}
           password: ${{ secrets.HOST_PASSWORD }}
           port: ${{ secrets.HOST_PORT }}
-          script:
+          script: |
+            # 进入工作区
             cd /www
+            # 使用Docker compose启动服务
             docker compose up -d
