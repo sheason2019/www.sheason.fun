@@ -38,4 +38,5 @@ jobs:
             # 进入工作区
             cd /root/www
             # 使用Docker compose启动服务
+            docker pull sheason/www.sheason.fun
             docker compose up -d
