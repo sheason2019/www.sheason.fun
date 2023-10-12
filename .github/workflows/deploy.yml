@@ -29,6 +29,6 @@ jobs:
           port: ${{ secrets.HOST_PORT }}
           script: |
             # 进入工作区
-            cd /www
+            cd /root/www
             # 使用Docker compose启动服务
             docker compose up -d
