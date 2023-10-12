@@ -28,4 +28,5 @@ jobs:
           password: ${{ secrets.HOST_PASSWORD }}
           port: ${{ secrets.HOST_PORT }}
           script:
-            echo "DOCKER COMPOSE UP"
+            cd /www
+            docker compose up -d
